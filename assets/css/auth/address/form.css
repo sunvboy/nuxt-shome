@@ -1,0 +1,189 @@
+.inner {
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    min-height: 400px;
+    padding: 30px 20px;
+}
+.inner .form-control {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px 0px 15px;
+}
+.input-label {
+    width: 110px;
+    min-width: 110px;
+    color: rgb(51, 51, 51);
+}
+.form-control > div {
+    display: flex;
+    flex: 1 1 0%;
+    position: relative;
+    z-index: 1;
+}
+.form-control input {
+    flex: 1 1 0%;
+}
+.girQwT {
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    height: 34px;
+    padding: 6px 12px;
+    line-height: 34px;
+    outline: none;
+}
+.form-control select {
+    width: 100%;
+    border: 1px solid rgb(204, 204, 204);
+    height: 34px;
+    padding: 6px 12px;
+    line-height: 34px;
+    outline: none;
+    background: 0px center;
+    border-radius: 4px;
+    box-shadow: none;
+}
+.form-control textarea {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    width: 100%;
+    padding: 6px 12px;
+}
+
+.cLable {
+    display: flex;
+    margin-right: 15px;
+}
+.cLable input[type="radio"] {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+    clip: rect(0px, 0px, 0px, 0px);
+    opacity: 0;
+}
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0px;
+}
+.cLable .radio-fake {
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgb(147, 150, 157);
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 12px 10px 0px;
+    position: relative;
+    z-index: 1;
+    color: rgb(120, 120, 120);
+    flex-shrink: 0;
+}
+.cLable input[type="radio"]:checked + .radio-fake {
+    border-color: rgb(13, 92, 182);
+}
+.cLable .radio-fake::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background-color: rgb(13, 92, 182);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s ease 0s;
+}
+.cLable input[type="radio"]:checked + .radio-fake::before {
+    transform: scale(1);
+}
+.cLable .label {
+    line-height: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.cLable2 {
+    display: inline-block;
+}
+.cLable2 input[type="checkbox"] {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+    clip: rect(0px, 0px, 0px, 0px);
+    opacity: 0;
+}
+.cLable2 .checkbox-fake {
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgb(120, 120, 120);
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 12px 0px 0px;
+    position: relative;
+    z-index: 1;
+    color: rgb(120, 120, 120);
+}
+.cLable2 .checkbox-fake::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    width: 12px;
+    height: 6px;
+    border-left: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transform: scale(0) rotate(-45deg);
+    transition: transform 0.3s ease 0s;
+}
+.cLable2 .label {
+   
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: justify;
+}
+.cLable2 input[type="checkbox"]:checked + .checkbox-fake::before {
+    transform: scale(1) rotate(-45deg);
+}
+.cLable2 input[type="checkbox"]:checked + .checkbox-fake {
+    border-color: rgb(27, 168, 255);
+    background-color: rgb(27, 168, 255);
+}
+.inner .btn-submit {
+    border: 0px;
+    width: 176px;
+    height: 40px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    background-color: red;
+    cursor: pointer;
+}
+.districtid,.wardid{
+
+    position: relative;
+}
+.districtid > div,.wardid > div{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+    color: #999;
+}
+.disabled .field__input{
+
+    cursor: not-allowed;
+}
+.districtid.disabled > div,.wardid.disabled > div{
+    z-index: -1;
+}
+select.field__input{
+    cursor: pointer;
+}

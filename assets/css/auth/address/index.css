@@ -1,0 +1,66 @@
+.page-address .new a {
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    border: 1px dashed rgb(216, 216, 216);
+    margin: 0px 0px 10px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  .page-address .new a i {
+    padding: 0px 10px;
+  }
+  .page-address .item {
+      background-color: rgb(255, 255, 255);
+      padding: 17px;
+      border-radius: 4px;
+      margin: 0px 0px 10px;
+      display: flex;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      line-height: 19px;
+  }
+  .page-address .item .name {
+      text-transform: uppercase;
+      margin: 0px 0px 10px;
+  }
+  .page-address .item .name > span {
+      margin: 0px 0px 0px 15px;
+      display: inline-block;
+      -webkit-box-align: center;
+      align-items: center;
+      color: rgb(38, 188, 78);
+      text-transform: none;
+  }
+  .page-address .item .name > span span {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0px 0px 0px 5px;
+  }
+  .page-address .item .address {
+      margin: 0px 0px 5px;
+  }
+  .page-address .item .address span {
+      color: rgb(120, 120, 120);
+  }
+  .page-address .item .phone span {
+      color: rgb(120, 120, 120);
+  }
+  .page-address .item .edit {
+      color: rgb(27, 168, 255);
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+  }
+  .page-address .item .delete {
+      font-size: 13px;
+      color: rgb(255, 66, 78);
+      border: 0px;
+      display: inline-block;
+      padding: 6px 12px;
+      cursor: pointer;
+      outline: 0px;
+      background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  }

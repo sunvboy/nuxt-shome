@@ -1,0 +1,25 @@
+{
+  "name": "sunvboy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/robots": "^2.5.0",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "@nuxtjs/toast": "^3.3.1",
+    "cookie": "^0.4.1",
+    "core-js": "^3.15.1",
+    "dayjs": "^1.10.6",
+    "nuxt": "^2.15.7",
+    "vue-ads-pagination": "^2.1.7",
+    "vue-slick-carousel": "^1.0.6"
+  },
+  "devDependencies": {}
+}

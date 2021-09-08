@@ -1,0 +1,239 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+    display: none;
+}
+.fade.in {
+    opacity: 1;
+    display:block;
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#popupCartModal {
+    padding-right: 0px !important;
+    background: rgba(0,0,0,0.3);
+}
+#popupCartModal .modal-dialog {
+    width: 750px;
+    transform: translate(0);
+    border-radius: 0;
+}
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0,-25%);
+    -ms-transform: translate(0,-25%);
+    -o-transform: translate(0,-25%);
+    transform: translate(0,-25%);
+}
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    margin: 30px auto;
+}
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+}
+#popupCartModal .modal-content {
+    border-radius: 0;
+    float: left;
+    width: 100%;
+}
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+#popupCartModal button.close {
+    position: absolute !important;
+    right: 10px;
+    top: 10px;
+    opacity: 1;
+}
+.row.row-noGutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+#popupCartModal .modal-content .modal-left {
+    border-right: 1px solid #ebebeb;
+    padding: 30px 30px 30px 40px;
+}
+#popupCartModal .modal-content .modal-right {
+    text-align: left;
+    padding: 30px 50px 30px 30px;
+    padding-bottom: 30px;
+}
+#popupCartModal h3, #popupCartModal .h3 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Open Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    color: #ff2d37;
+    padding: 0 0 15px 0;
+    margin: 0;
+    display: block;
+    border-bottom: solid 1px #ebebeb;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+#popupCartModal h3 i, #popupCartModal .h3 i {
+    font-style: normal;
+    color: #ff2d37;
+}
+#popupCartModal .modal-body {
+    position: relative;
+    padding: 15px 0;
+}
+.media, .media-body {
+    overflow: hidden;
+    zoom: 1;
+}
+.media:first-child {
+    margin-top: 0;
+}
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+.media-left, .media>.pull-left {
+    padding-right: 10px;
+}
+#popupCartModal .media .thumb-1x1 {
+    width: 100px;
+    text-align: center;
+}
+#popupCartModal .modal-body .product-title {
+    font-size: 14px;
+    color: #282828;
+    font-weight: 600;
+    line-height: 20px;
+}
+#popupCartModal .product-new-price {
+    color: #ff2d37;
+    margin-top: 6px;
+    font-size: 18px;
+    font-family: "Open Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-weight: 400;
+}
+#popupCartModal h3, #popupCartModal .h3 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Open Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    color: #ff2d37;
+    padding: 0 0 15px 0;
+    margin: 0;
+    display: block;
+    border-bottom: solid 1px #ebebeb;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+#popupCartModal h3.right_title, #popupCartModal .right_title.h3 {
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    color: #898989;
+}
+#popupCartModal h3.right_title a, #popupCartModal .right_title.h3 a, #popupCartModal h3.right_title b, #popupCartModal .right_title.h3 b {
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    color: #898989;
+    font-weight: 400;
+}
+#popupCartModal .total_price {
+    font-weight: 400;
+    display: block;
+    padding: 15px 0;
+    font-size: 14px;
+    color: #282828;
+}
+#popupCartModal .total_price span:last-child {
+    display: inline-block;
+    font-weight: 400;
+    color: #ff2d37;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 10px;
+}
+#popupCartModal .checkout_button {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    background: #ff2d37;
+    border-radius: 0;
+    padding: 0 15px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 45px;
+}
+@media (min-width: 768px){
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+        box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    }
+
+}
+@media (min-width: 1200px){
+    .col-lg-6 {
+        width: 50%;
+        float: left;
+    }
+}
+@media (max-width: 767px){
+    #popupCartModal .modal-dialog {
+        width: auto;
+    }
+    #popupCartModal .modal-content .modal-left {
+        border-right: 0px;
+        padding: 10px 30px 0;
+    }
+    #popupCartModal .modal-content .modal-right {
+        padding: 0px 30px 15px !important;
+    }
+    #popupCartModal .modal-body {
+    border-bottom: solid 1px #ebebeb;
+    margin-bottom: 15px;
+    }
+}

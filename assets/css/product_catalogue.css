@@ -1,0 +1,190 @@
+.aside-item {
+    border: 1px #ebebeb solid;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    background: #fff;
+    width: 100%;
+    float: left;
+}
+.aside-item .aside-title {
+    border-radius: 15px;
+    background: #ff2d37;
+    padding: 6px 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.aside-item .aside-title h2 {
+    font-size: 17px;
+    color: #FFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: none;
+    margin: 0;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding-right: 10px;
+}
+.aside-item .aside-content {
+    margin: 0;
+}
+.filter-item {
+    margin: 0;
+    cursor: pointer;
+    line-height: 2.5em;
+    min-width: 100%;
+    float: left;
+    padding-right: 8px;
+}
+.filter-item * {
+    color: #6f6f6f;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: normal;
+}
+.filter-item label {
+    display: inline-block;
+    padding-left: 20px;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.aside-content ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    width: 100%;
+    
+}
+.aside-content input[type=checkbox] {
+    position: relative;
+      cursor: pointer;
+      margin-right: 5px;
+}
+.aside-content input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 0;
+    border: 1px solid #555555;
+    border-radius: 3px;
+    background-color: white;
+    transform: translateY(-50%);
+}
+.aside-content input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 12px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0px;
+    left: 7px;
+}
+
+.filter-item label span {
+   padding-left: 5px;
+}
+
+/*sort*/
+#sort-by {
+    display: inline-block;
+    padding-left: 10px;
+    float: right;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#sort-by label {
+    float: left;
+    line-height: 30px;
+    font-size: 14px;
+    margin-right: 6px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+#sort-by ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+    float: right;
+}
+#sort-by>ul>li {
+    border-radius: 20px;
+    padding: 0 10px;
+    line-height: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 28px;
+    text-indent: .01px;
+    cursor: pointer;
+    line-height: 34px;
+    background-image: url(/assets/images/ico-select.png) !important;
+    width: 151px;
+}
+#sort-by li:hover {
+    background-color: #fff;
+}
+#sort-by li:hover>ul {
+    display: block;
+}
+#sort-by li {
+    background: none repeat scroll 0 0 #fff;
+    cursor: pointer;
+    margin: 0 auto;
+    outline: medium none;
+    padding: 0 10px;
+    position: relative;
+    width: 240px;
+    float: left;
+    color: #333;
+    border: 1px solid #ebebeb;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+#sort-by a:link, #sort-by a:visited {
+    color: #333;
+    text-decoration: none;
+}
+#sort-by li>a {
+    display: inline-block;
+    width: 100%;
+    line-height: 36px;
+}
+#sort-by ul ul {
+    position: absolute;
+    left: -1px;
+    top: 28px;
+    background: none repeat scroll 0 0 #F8F8F8;
+    z-index: 10000;
+    border-top: none;
+    border: 1px #F0F0F0 solid;
+}
+
+@media (max-width:1023px) {
+    .cards {
+        --spacing: 25px;
+        --columns: 2;
+    }
+}
+@media (max-width:767px) {
+    .cards {
+        --spacing: 25px;
+        --columns: 1;
+    }
+}

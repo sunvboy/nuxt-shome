@@ -1,0 +1,50 @@
+.iOhDoD .inner {
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 1px;
+    min-height: 400px;
+}
+.iOhDoD table {
+    border-collapse: collapse;
+    width: 100%;
+    word-break: break-word;
+}
+.iOhDoD tr {
+    border-bottom: 1px solid rgb(244, 244, 244);
+}
+.iOhDoD th, .iOhDoD td {
+    min-width: 130px;
+    padding: 20px 15px;
+    color: rgb(120, 120, 120);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+.iOhDoD td {
+    line-height: 20px;
+    color: rgb(51, 51, 51);
+}
+.iOhDoD th:last-child, .iOhDoD td:last-child {
+    text-align: right;
+}
+@media (max-width: 767px){
+    .iOhDoD th{
+        min-width: 100%;
+    }
+    .iOhDoD tr{
+        display: grid;
+        width: 100%;
+    }
+    .iOhDoD thead{
+        display: none;
+    }
+    .iOhDoD th:last-child, .iOhDoD td:last-child {
+        text-align: left;
+    }
+    .iOhDoD td{
+        padding: 5px 15px;
+
+    }
+}
