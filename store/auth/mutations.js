@@ -49,11 +49,15 @@ export default {
         state.wishlist = data;
     },
     DEL_WISHLIST(state,id){
-        let newPosts = state.wishlist.posts.filter(item => {
-            return item.id !== id
-        });
-        state.wishlist.totalRow = Number(state.wishlist.totalRow)-1
-        state.wishlist.posts = newPosts;
+        const array = state.wishlist.posts
+        if(array){
+            let newPosts = state.wishlist.posts.filter(item => {
+                return item.id !== id
+            });
+            state.wishlist.totalRow = Number(state.wishlist.totalRow)-1
+            state.wishlist.posts = newPosts;
+        }
+      
     },
     DEL_ADDRESS(state,id){
         let newPosts = state.address.posts.filter(item => {

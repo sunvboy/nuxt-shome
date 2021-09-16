@@ -18,20 +18,24 @@ export default {
     },
     SET_PRODUCT_WISHLIST(state, productid){
         const array = state.productsListByCatalogue.posts
-        let newComment = array.filter((item) => {
-            if (Number(item.id) === Number(productid)) {
-                return item.wishlist = 1
-            }
-        })
-
+        if(array){
+            array.filter((item) => {
+                if (Number(item.id) === Number(productid)) {
+                    return item.wishlist = 1
+                }
+            })
+        }
     },
     DEL_WISHLIST_PRODUCT(state, productid){
         const array = state.productsListByCatalogue.posts
-        let newComment = array.filter((item) => {
-            if (Number(item.id) === Number(productid)) {
-                return item.wishlist = 0
-            }
-        })
+        if(array){
+            array.filter((item) => {
+                if (Number(item.id) === Number(productid)) {
+                    return item.wishlist = 0
+                }
+            })
+        }
+        
 
     }
 }
