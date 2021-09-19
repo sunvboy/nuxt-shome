@@ -26,7 +26,7 @@
                     <c-text-error :txtError="txtError"></c-text-error>
                     <div class="section__content">
                         <form>
-                            <div class="field field--show-floating-label">
+                            <div class="field field--show-floating-label" v-if="dataAddressUser">
                                  <div class="field__input-wrapper">
                                     <label for="customer-address" class="field__label">Sổ địa chỉ</label>
                                     <select v-model="idDataAddressUser" size="1" class="field__input field__input--select" @change="customerAddress">

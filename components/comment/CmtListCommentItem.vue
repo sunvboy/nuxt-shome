@@ -123,7 +123,7 @@ export default {
       this.actFetchListComment({
         page: this.commentsReplyPaging.page + 1,
         parentid: this.getID,
-        idNoneComments: this.idNoneComments
+        idNoneComments: this.idNoneComments,
       }).then(() => {
         this.isLoading = false;
       });
